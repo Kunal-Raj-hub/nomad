@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Portfolio | Kunal Raj</title>
+
+    <!-- SEO Meta Tags - This helps search engines understand your page -->
+    <meta name="description" content="Personal portfolio of Kunal Raj, an MSc Graduate Student in Physics at HRI. Showcasing research in theoretical physics, publications, and creative writings.">
+    <meta name="keywords" content="Kunal Raj, Physics, Physicist, HRI, Harish-Chandra Research Institute, Theoretical Physics, Graduate Student, Portfolio, Research">
+    <meta name="author" content="Kunal Raj">
+    <link rel="canonical" href="https://www.your-website-url.com/" /> <!-- IMPORTANT: Replace with your actual domain -->
+
+    <!-- Open Graph / Facebook Meta Tags - For sharing on social media -->
+    <meta property="og:title" content="Kunal Raj | Physics Portfolio">
+    <meta property="og:description" content="Personal portfolio showcasing research, publications, and writings of Kunal Raj, a physicist at HRI.">
+    <meta property="og:image" content="https://www.your-website-url.com/kunal-raj-profile.jpg"> <!-- IMPORTANT: This should be a direct link to your photo -->
+    <meta property="og:url" content="https://www.your-website-url.com/"> <!-- IMPORTANT: Replace with your actual domain -->
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kunal Raj | Physics Portfolio">
+    <meta name="twitter:description" content="Personal portfolio showcasing research, publications, and writings of Kunal Raj, a physicist at HRI.">
+    <meta name="twitter:image" content="https://www.your-website-url.com/kunal-raj-profile.jpg"> <!-- IMPORTANT: This should be a direct link to your photo -->
+
+    <!-- Favicon - The little icon in the browser tab -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark blue-gray */
+            color: #d1d5db; /* Light gray text */
+        }
+        .glass-effect {
+            background: rgba(31, 41, 55, 0.5); /* Semi-transparent dark gray */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .accent-color {
+            color: #60a5fa; /* A nice shade of blue */
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #3b82f6;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: #60a5fa;
+            border: 2px solid #60a5fa;
+        }
+        .btn-secondary:hover {
+            background-color: #60a5fa;
+            color: white;
+        }
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #3b82f6;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="glass-effect fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">KR</a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                <a href="#research" class="hover:text-blue-400 transition-colors">Research</a>
+                <a href="#publications" class="hover:text-blue-400 transition-colors">Publications</a>
+                <a href="#writings" class="hover:text-blue-400 transition-colors">Writings</a>
+                <a href="#contact" class="btn btn-secondary !py-2 !px-4">Contact</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden text-white">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <a href="#about" class="block py-2 px-6 hover:bg-gray-700">About</a>
+            <a href="#research" class="block py-2 px-6 hover:bg-gray-700">Research</a>
+            <a href="#publications" class="block py-2 px-6 hover:bg-gray-700">Publications</a>
+            <a href="#writings" class="block py-2 px-6 hover:bg-gray-700">Writings</a>
+            <a href="#contact" class="block py-2 px-6 hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center bg-cover bg-center" style="background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 1)), url('https://placehold.co/1920x1080/111827/111827?text=');">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-4">Kunal Raj</h1>
+                <p class="text-xl md:text-2xl accent-color mb-8">MSc Graduate Student at HRI</p>
+                <p class="max-w-3xl mx-auto text-lg text-gray-300 mb-10">
+                    Exploring the fundamental laws of the universe through mathematically rigorous inquiry. My ambition is to contribute to the forefront of theoretical physics.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#research" class="btn btn-primary">My Research</a>
+                    <a href="#cv" id="cv-link" class="btn btn-secondary">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-white">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3 text-center">
+                        <!-- IMPORTANT: Replace this with your actual photo file -->
+                        <img src="kunal-raj-profile.jpg" alt="Kunal Raj" class="rounded-full w-64 h-64 mx-auto border-4 border-blue-500 shadow-lg object-cover">
+                    </div>
+                    <div class="md:w-2/3 text-lg">
+                        <p class="mb-4">
+                            I am a dedicated MSc graduate student at the Harish-Chandra Research Institute (HRI), driven by an insatiable curiosity for the cosmos and its underlying principles. My academic journey is a pursuit of deep, conceptual understanding, viewing physics not just as a subject, but as the fundamental language of reality.
+                        </p>
+                        <p class="mb-4">
+                            My focus lies in [Your Specific Field, e.g., Theoretical Cosmology, Quantum Field Theory, Condensed Matter Physics], where I aim to tackle challenging problems with a systematic and analytical approach. I believe in the power of rigorous mathematics as the essential tool to unlock novel physical insights.
+                        </p>
+                        <p>
+                            This website serves as a living document of my progress, research endeavors, and contributions on my path to becoming a physicist.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-white">Research Interests</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Research Item 1 -->
+                    <div class="glass-effect rounded-lg p-6 flex flex-col hover:border-blue-500 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-white mb-2">Project Title One</h3>
+                        <p class="text-gray-400 flex-grow">A brief but compelling description of your research project. Explain the core problem, your methodology, and the potential implications of your work. Keep it concise and accessible.</p>
+                        <a href="#" class="mt-4 text-blue-400 font-semibold hover:text-blue-300">Learn More &rarr;</a>
+                    </div>
+                    <!-- Research Item 2 -->
+                    <div class="glass-effect rounded-lg p-6 flex flex-col hover:border-blue-500 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-white mb-2">Project Title Two</h3>
+                        <p class="text-gray-400 flex-grow">This is a placeholder for another one of your key research interests or projects. Remember to update this with your actual work to make the portfolio truly yours.</p>
+                        <a href="#" class="mt-4 text-blue-400 font-semibold hover:text-blue-300">View Paper &rarr;</a>
+                    </div>
+                    <!-- Research Item 3 -->
+                    <div class="glass-effect rounded-lg p-6 flex flex-col hover:border-blue-500 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-white mb-2">Future Directions</h3>
+                        <p class="text-gray-400 flex-grow">Use this space to talk about the questions you are currently pondering or the future research directions you are excited to explore in your academic career.</p>
+                        <a href="#" class="mt-4 text-blue-400 font-semibold hover:text-blue-300">Read Discussion &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-white">Publications</h2>
+                <div class="max-w-4xl mx-auto">
+                    <ul class="space-y-6">
+                        <!-- Publication Item 1 -->
+                        <li class="glass-effect rounded-lg p-6">
+                            <p class="font-mono text-sm text-gray-400">[Journal Name], Vol. XX, Issue Y, 2025</p>
+                            <h3 class="text-lg font-semibold text-white mt-1">"Title of Your Groundbreaking Paper"</h3>
+                            <p class="text-gray-300 mt-1">Raj, K., et al.</p>
+                            <a href="#" class="text-blue-400 font-semibold hover:text-blue-300 mt-2 inline-block">DOI Link or arXiv ID &rarr;</a>
+                        </li>
+                        <!-- Publication Item 2 -->
+                        <li class="glass-effect rounded-lg p-6">
+                            <p class="font-mono text-sm text-gray-400">[Conference Proceedings], 2024</p>
+                            <h3 class="text-lg font-semibold text-white mt-1">"Another Important Contribution to the Field"</h3>
+                            <p class="text-gray-300 mt-1">Raj, K., and Collaborator, B.</p>
+                            <a href="#" class="text-blue-400 font-semibold hover:text-blue-300 mt-2 inline-block">Read Preprint &rarr;</a>
+                        </li>
+                         <!-- Add more publications here -->
+                    </ul>
+                     <p class="text-center mt-8 text-gray-400 italic">More publications coming soon...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Writings Section -->
+        <section id="writings" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-white">My Writings</h2>
+                <p class="max-w-3xl mx-auto text-center text-lg text-gray-400 mb-12">
+                    Beyond physics, I find joy and clarity in writing. Here are some of my poems, stories, and reflections on the world around me.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Writing Item 1: Poetry -->
+                    <div class="glass-effect rounded-lg p-6 flex flex-col hover:border-blue-500 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-white mb-2">Poetry Collection</h3>
+                        <p class="text-gray-400 flex-grow">A collection of poems exploring themes of nature, science, and the human experience. These are personal reflections captured in verse.</p>
+                        <a href="#" class="mt-4 text-blue-400 font-semibold hover:text-blue-300">Read Poems &rarr;</a>
+                    </div>
+                    <!-- Writing Item 2: Stories -->
+                    <div class="glass-effect rounded-lg p-6 flex flex-col hover:border-blue-500 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-white mb-2">Short Stories</h3>
+                        <p class="text-gray-400 flex-grow">Fictional narratives and short stories where I explore different ideas, characters, and worlds. A creative outlet for my imagination.</p>
+                        <a href="#" class="mt-4 text-blue-400 font-semibold hover:text-blue-300">Explore Stories &rarr;</a>
+                    </div>
+                    <!-- Writing Item 3: Articles -->
+                    <div class="glass-effect rounded-lg p-6 flex flex-col hover:border-blue-500 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-white mb-2">Articles &amp; Thoughts</h3>
+                        <p class="text-gray-400 flex-grow">Here I share my thoughts on various topics, from observations about my surroundings to articles on subjects that capture my interest outside of academia.</p>
+                        <a href="#" class="mt-4 text-blue-400 font-semibold hover:text-blue-300">Read Articles &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title text-white">Get In Touch</h2>
+                <p class="max-w-2xl mx-auto text-lg mb-8">
+                    I am always open to discussing physics, new research ideas, or potential collaborations.
+                </p>
+                <div id="contact-info" class="relative inline-block">
+                     <p id="email" class="text-xl font-semibold accent-color bg-gray-800 px-6 py-3 rounded-lg cursor-pointer">your.email@university.edu</p>
+                     <div id="copy-feedback" class="absolute -top-10 left-1/2 -translate-x-1/2 bg-green-500 text-white text-sm rounded-md px-3 py-1 opacity-0 transition-opacity duration-300">Copied!</div>
+                </div>
+                <div class="flex justify-center space-x-6 mt-8">
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i data-lucide="linkedin" class="w-8 h-8"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i data-lucide="github" class="w-8 h-8"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i data-lucide="graduation-cap" class="w-8 h-8"></i></a> <!-- For Google Scholar -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-700">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2025 Kunal Raj. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                // Close mobile menu on click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                
+                // For the CV link, just proceed with default behavior if it's pointing to a file
+                if (targetId === '#cv') {
+                    // You should replace this with a direct link to your PDF file
+                    window.open('/path/to/your/cv.pdf', '_blank');
+                    return;
+                }
+
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Handle CV link separately for direct download/opening
+        document.getElementById('cv-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            // IMPORTANT: Replace this placeholder with the actual path to your CV PDF file.
+            // For example: window.open('Abhishodh_Prakash_CV.pdf', '_blank');
+            alert("Please update the link in the HTML file to point to your actual CV file!");
+        });
+
+
+        // Email copy to clipboard functionality
+        const emailElement = document.getElementById('contact-info');
+        const emailText = document.getElementById('email').textContent;
+        const copyFeedback = document.getElementById('copy-feedback');
+
+        emailElement.addEventListener('click', () => {
+            // A slightly more robust way to copy that works in secure contexts
+             try {
+                // A fallback for older browsers.
+                const textArea = document.createElement("textarea");
+                textArea.value = emailText;
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+
+                // Show feedback
+                copyFeedback.style.opacity = '1';
+                setTimeout(() => {
+                    copyFeedback.style.opacity = '0';
+                }, 2000);
+
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+                // You could show an error message here instead of an alert
+            }
+        });
+
+    </script>
+    
+    <!-- Structured Data (JSON-LD) - Gives Google detailed info for rich results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kunal Raj",
+      "url": "https://www.your-website-url.com/",  
+      "jobTitle": "MSc Graduate Student in Physics",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Harish-Chandra Research Institute (HRI)"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Harish-Chandra Research Institute (HRI)"
+      },
+      "knowsAbout": ["Physics", "Theoretical Physics", "Scientific Writing", "Poetry"],
+      "sameAs": [
+        "https://www.linkedin.com/in/your-profile", 
+        "https://github.com/your-username",
+        "https://scholar.google.com/citations?user=your-id"
+      ] 
+    }
+    </script>
+</body>
+</html>
+
